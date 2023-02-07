@@ -1,0 +1,181 @@
+#SignUpCont,#inputSignUp,.PlusNum,.PlusCont,.GradientButton.SignUpColor{
+    border-radius: 0.7rem;}
+  #SignUpCont {
+    font-size: 0;
+    background-color: var(--background-lighter-color);}
+  #inputSignUp::-webkit-input-placeholder {
+    color: #ffa0a8;}
+  #inputSignUp:focus {
+    outline: none;
+    color: var(--main-blue-color);
+    border-color: var(--main-blue-color);
+    box-shadow: 0 0 0.5rem #508aff;}
+  #Warning {
+    margin: 0 1rem;
+    padding: 0.2rem 0 0.5rem 0;
+    color: #ff8993;
+    font-size: var(--p-secondary);}
+  #inputSignUp {
+    color:var(--main-blue-color); 
+    margin-left:1rem;
+    background-color: var(--main-white-color);
+    width: calc(58% - 25px);
+    border: 2px solid #ffc5ca;
+    padding-left: 3%;}
+  
+    #inputSignUp::selection {
+      background-color: var(--main-blue-color)
+    }
+  #inputSignUp,.GradientButton.SignUpColor {
+    height:3rem;
+    font-size: var(--signup);}
+  #sign {
+  justify-content: space-between;
+  padding-top: 1rem;
+  display: flex;}
+  .GradientButton.SignUpColor {
+    /*Кнопка регистрации*/
+    background-image: linear-gradient(to right, #143371, var(--main-blue-color), #1746e2, #143371);
+    font-weight: 700;
+    width:35%;
+    margin-right:1rem;}
+  .GradientButton.SignUpColor:hover {
+    box-shadow: 0px 2px 8px 0px rgba(10, 22, 1000, 0.45);}
+  
+
+    
+#AllPlusesCont {
+    flex-flow: row wrap;
+    justify-content: space-between;}
+  .PlusNum {
+    background-color: var(--main-background-blue-color);
+    height: 1.5em;
+    width: 1.5em;
+    font-size: 2em;
+    flex: 0 0 auto;
+    line-height: 1.5em;
+    color: var(--main-blue-color);}
+  .PlusCont{
+    font-size: var(--p-secondary);
+    width: 31%;
+    padding: 1em;
+    margin: 0.4rem;
+    background-color: var(--background-lighter-color);}
+  .PlusNum,.PlusText {
+    margin: auto 0;}
+  .PlusText {
+    padding-left: 0.7rem;
+    opacity: 1;}
+
+    
+.YouCanUseList {
+    margin: 1rem 0 0;}
+  .YouCanUseList li {
+    background: url("../Pictures/Yes.png") no-repeat 7px 7px transparent;
+    background-position: left;
+    list-style: none;
+    margin: 0.5rem 0;
+    padding-left: calc(33px + (40 - 33) * (100vw - 600px) / (1200 - 600));}
+  .YouCanUseList li:first-child {
+    margin-top: 0px;}
+  .YouCanUseList li:last-child {
+    margin-bottom: 0px;}
+  
+
+    #withoutpic {
+        width:120%;}
+      
+      #MrBull{
+      height:  calc(450px + (550 - 450) * (100vw - 1000px) / (1920 - 1000));
+      width:auto;
+      margin: 0 auto;
+      display: block;}
+      
+      #MrBull2 {
+        height:  calc(270px + (280 - 200) * (100vw - 768px) / (1920 - 768));
+        width:auto;
+        margin: 0 auto;
+        display: block;
+      
+      }
+      #bull,#Bull2 {
+      width:100%;}
+      #firsttext,#firsttext2 {   
+        display: flex;
+        align-items: center;}
+      #inputSignUp,#inputSignUp::-webkit-input-placeholder,#Warning {
+        font-family: "PT Root UI";}
+
+        
+    @media (max-width:1000px) {
+        #withoutpic,#withoutpic2 {
+          width:160%;}
+      
+        #MrBull{
+          height:calc(310px + (420 - 310) * (100vw - 600px) / (1000 - 600));
+          width:auto;
+          margin-right:0;
+          margin-left:auto;
+          display: block;}
+        #bull,#Bull2 {
+          width:100%;}
+        #inputSignUp, .GradientButton.SignUpColor {
+          height: 2.6rem;}
+        #AllPlusesCont > div {
+          width: 47%;}
+        .PlusNum {
+          width: 1.5em;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;}}
+
+          
+@media (max-width:768px){
+
+    #MrBull2,#MrBull {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      height:auto;
+      display: block;
+      width: calc(170px + (200 - 170) * ((100vw - 320px) / (768 - 320)));
+      margin-top: calc(20px + 2vw);}
+      #firsttext2{display: inline;}
+      #withoutpic2 {
+        width:100%
+      }
+
+    
+    #withoutpic {
+      width:140%;}
+
+ 
+    #inputSignUp, .GradientButton.SignUpColor {
+      height: 2.5rem;}
+    #SignUpCont, #inputSignUp, .GradientButton.SignUpColor {
+      border-radius: 0.5rem;}}
+  
+
+
+      @media (max-width: 600px) {
+
+      #withoutpic{
+        width:100%
+      }
+        #MrBull {
+          height:auto;
+          width: calc(190px + (250 - 190) * ((100vw - 320px) / (600 - 320)));
+          margin-top: calc(20px + 2vw);}
+          #MrBull2 {          width: calc(170px + (230 - 170) * ((100vw - 320px) / (600 - 320)));}
+
+        #inputSignUp {
+          width: calc(60% - 25px);}
+        #AllPlusesCont > div {
+          width: 100%;
+          margin: 5px;}
+      #firsttext{
+        display: block;
+      }
+        }
+      

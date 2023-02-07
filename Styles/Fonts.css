@@ -1,0 +1,54 @@
+
+@font-face /* Шрифт основного текста жирный*/{
+    font-family: 'PT Root UI';
+    src: 
+        url(../Fonts/JustTextBold.ttf) format('woff2'),
+        url(../Fonts/JustTextBold.woff) format('woff'),
+        url(../Fonts/JustTextBold.ttf) format('ttf');
+    font-weight: bold;
+    font-style: normal;}
+  @font-face /* Шрифт основного текста*/{
+      font-family: 'Montserrat Alternates Regular';
+      src: 
+        url(../Fonts/HeadingsRegular.ttf) format('ttf'),
+        url(../Fonts/HeadingsRegular.woff) format('woff'),
+        url(../Fonts/HeadingsRegular.woff2) format('woff2');
+      font-weight: 400;
+      font-style: normal;}
+  @font-face /* Шрифт текста заголовков жирный*/{
+    font-family: 'Montserrat Alternates';
+    src: 
+        url(../Fonts/HeadingsBold.ttf) format('woff2'),
+        url(../Fonts/HeadingsBold.woff) format('woff'),
+        url(../Fonts/HeadingsBold.ttf) format('ttf');
+    font-weight: bold;
+    font-style: normal;}
+
+
+
+  @font-face /* Шрифт основного текста тонкий*/{
+    font-family: 'PT Root UI';
+    src: 
+        url(../Fonts/JustTextLight.ttf) format('woff2'),
+        url(../Fonts/JustTextLight.woff) format('woff'),
+        url(../Fonts/JustTextLight.ttf) format('ttf');
+    font-weight: 300;
+    font-style: normal;}  
+  @font-face /* Шрифт текста заголовков тонкий*/{
+    font-family: 'Montserrat Alternates';
+    src: 
+        url(../Fonts/HeadingsLight.ttf) format('woff2'),
+        url(../Fonts/HeadingsLight.woff) format('woff'),
+        url(../Fonts/HeadingsLight.ttf) format('ttf');
+    font-weight: lighter;
+    font-style: normal;}
+    
+          
+  @font-face /* Шрифт основного текста тонкий*/{
+    font-family: 'PT Root UI';
+    src: 
+    url(../Fonts/JustTextRegular.ttf) format('ttf'),
+        url(../Fonts/JustTextRegular.woff2) format('woff2'),
+        url(../Fonts/JustTextRegular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;}  

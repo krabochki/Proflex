@@ -1,0 +1,362 @@
+:root {
+  --main-text-color: #0f285a;
+  --main-background-red-color: #f8a7ad;
+  --background-lighter-color: #fcd0d5;
+  --main-background-blue-color: #bfd4ff;
+  --background-lighter-color2: #d5e3ff;
+  --scrollbar-color: #9cbbff;
+  --main-blue-color: #0957f2;
+  --main-red-color: #f11328;
+  --shadows-black: #8f8f8f;
+  --main-white-color: #f8f8f8;
+  --main-padding: 1rem;
+  --p: 1rem;
+  --h1: 1.7rem;
+  --p-main: 1.15rem;
+  --h2: 1.15rem;
+  --signup:1.15rem;
+  --menu:1rem;
+  --p-secondary:0.8rem;
+  --main-marg: calc(14.5vw - 35px);
+  --foot-p:0.8rem;
+  --foot-h2:0.9rem;
+  --foot-h1:1.2rem;
+  --main-marg-top:3.3rem;}
+
+
+*,*:before,*:after {
+  box-sizing: border-box;}
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;}
+html {
+  font-size: calc(18px + (24 - 18) * ((100vw - 600px) / (1920 - 600)));}
+* {
+  margin: 0;
+  padding: 0;}
+body{
+  font-family: "PT Root UI", 'Arial';
+  font-weight: 400;
+  margin: 0;
+  overflow: overlay;
+  background: linear-gradient(90deg, var(--main-background-red-color), var(--main-background-blue-color));
+  color: var(--main-text-color);}
+
+  html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;}
+
+#GlobalMargins,.OpenPagesCont,.InThisArticle,#Menu {
+margin: 0px var(--main-marg);}
+
+details {
+  transition: all 3s ease; 
+}
+body::-webkit-scrollbar {
+  width: 0.6rem;}
+body::-webkit-scrollbar-track {
+  background: transparent;
+background-color: transparent}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: 1rem;
+  border: 0.15rem solid #bad1fd;}
+
+.GradientButton {
+  width: 35%;
+  color: var(--main-white-color);
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  font-family: "PT Root UI";}
+.GradientButton:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;}
+.MenuButton,#MenuLogo,.GradientButton,a:-webkit-any-link,.ColumnName:hover,.ColumnBtn:hover,#FootLogo,summary {
+  cursor: pointer;}
+a {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+  text-decoration: none;}
+#Menu,#AllPlusesCont,.PlusCont {
+  display: flex;}
+abbr {
+  text-decoration: none;}
+#MenuLogo,h2,.BigFoot,#FootLogo {
+  font-variant-ligatures: none;}
+h1,#MenuLogo,h2,.PlusNum,#FootLogo {
+  font-family: "Montserrat Alternates";
+  font-weight: 700;}
+h2,h1,#p-main,#SignUpCont,p {
+  line-height: 1.3;}
+#Warning,.PlusNum,.footerRealBtn {
+  text-align: center;}
+#bull,#Bull2,.PlusCont {
+  position: relative;}
+
+.MenuButton,#MenuLogo,hr {
+  border: none;}
+.MenuButton,#MenuLogo,.GradientButton.LogInColor {
+  font-size: var(--menu);}
+.MenuButton,#MenuLogo {
+  background-color: unset;}
+.MenuButton {
+  padding-left: 2.5rem;}
+
+.GradientButton.GradientButton.LogInColor:hover{
+  box-shadow: 0px 2px 8px 0px #ffa0aa;}
+.GradientButton.LogInColor {
+  background-image: linear-gradient(to right, #a81524, var(--main-red-color), #cf1f31, #77101a);
+  width: 11%;
+  margin-left: auto;
+  font-weight: 700;
+  padding:0.2rem ;
+  border-radius: 0.5rem;}
+.MenuButton:hover, #MenuLogo:hover {
+  text-shadow: -1.5px 1.5px 1.3px var(--shadows-black);}
+hr {
+  background: var(--main-background-blue-color);
+  height: 1px;
+  margin: 0 calc(14.3vw - 30px);}
+header{
+  position:sticky;
+  top:0;
+  padding-top: 0.8rem;
+  width: 100%;
+  background:linear-gradient(90deg, var(--main-background-red-color), var(--main-background-blue-color));
+  z-index: 1;}
+#Menu {
+  margin-bottom: 0.8rem;}
+#logo {
+  font-family: "Montserrat Alternates Regular";
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-blue-color);}
+  logo:focus{
+    outline: none;
+    outline-offset: 0;
+
+  }
+.MenuButton {
+  font-family: "PT Root UI";}
+#MenuButtons {
+  display: contents;
+  font-size: 0px;}
+
+#p-main {
+  font-size: var(--p-main);
+  margin: 1.5rem 0;}
+h1{
+  font-size: var(--h1)}
+
+
+h2 {
+  font-size: var(--h2);
+  margin-bottom: 0.8rem;}
+section {
+  margin-top: 5rem;
+  margin-bottom:1rem;}
+section:first-child {
+  margin-top: 0px;
+  padding-top:2rem;}
+.wave {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--main-blue-color);}
+p {
+  margin: 1rem 0 0;}
+
+a:active,a:visited,a:-webkit-any-link {
+  color: var(--main-text-color);}
+
+.ColumnBtn {
+  margin-top: 0.5vw;
+  white-space: pre-wrap;}
+.ColumnName:hover,.ColumnBtn:hover {
+  text-shadow: -1px 1px 1.3px var(--shadows-black);}
+.ColumnName:hover {
+  color: var(--main-red-color);}
+.ColumnBtn:hover {
+  color: var(--main-blue-color);}
+
+.BigFoot {
+  width: 100%;
+  color: rgb(134, 134, 134);
+  font-size: var(--foot-p);
+  font-weight: lighter;
+  padding: 30px var(--main-marg);
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.2);}
+.FooterColumn,.inst,.vk,.telef,summary,#Contacts {
+  display: inline-block;}
+.footerRealBtn {
+  width: calc(70px + 2.8vw);
+  padding: 0.3vw 0;
+  display: block;
+  background-color: rgb(33, 33, 33, 0.05);
+  border-radius: 100px;
+  margin-top: 0.3rem;}
+.footerRealBtn:hover {
+  background-color: rgb(33, 33, 33, 0.1);
+  color: rgb(85, 85, 85);}
+#FootLogo,.footerRealBtn,.ColumnName,.ColumnBtn,.MenuButton,#MenuLogo,summary,details p,details ul li:hover,details[open] summary:hover {
+  transition: all 0.3s ease-in-out, font-size 0s, padding 0s, margin 0s;}
+
+  #inputSignUp {
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+#FootLogo,.ColumnName,#ContactsHeading {
+  margin-bottom: 0.7rem;}
+.ColumnName,#ContactsHeading {
+  font-size: var(--foot-h2);
+  font-family: "Montserrat Alternates";}
+#FootLogo {
+  font-size: var(--foot-h1);
+  font-style: italic;}
+#FootLogo a {
+  color:var(--main-text-color) !important;}
+#FootLogo:hover {
+  filter: drop-shadow(-1.6px 1.6px 0.7px var(--shadows-black));}
+.inst, .vk, .telef {
+  height: 50px;
+  width: 50px;
+  margin-top: 0.5em;}
+.inst {
+  background-image: url("../Pictures/inst.png");}
+.telef{
+  background-image: url("../Pictures/tele.png");}
+.vk {
+  background-image: url("../Pictures/vk.png");}
+#Author {
+  margin-top: 55px;
+  text-align: right;}
+.ColumnButtons {
+  padding-left: calc(2vw + 8px);}
+footer a {
+  color: rgb(134, 134, 134) !important;}
+#ThemeColumns {
+  margin: 0 auto;
+  display: flex;}
+#AllRightsReserved{
+  position: absolute;}
+
+summary::-webkit-details-marker,summary::marker {
+  display: none;}
+#contactsNthemesColumn {
+  display: flex;}
+
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;}
+.body_visible {
+	opacity: 1;} 
+
+
+
+
+
+/*МЕДИА ЗАПРОСЫ*/
+
+@media (max-width:1000px) {
+  :root {
+    --h1: 1.35rem;
+    --p-main:1.05rem;
+    --signup:1.05rem;}}
+
+@media (max-width:768px){
+
+ :root {
+    --signup:1rem;
+    --h1:1.25rem;
+    --p-main: 1rem;}
+  .MenuButton {
+    padding:0;}
+  .GradientButton.LogInColor{
+    margin-left:0;
+    width:13%}
+  #Menu {
+    justify-content: space-between;}}
+
+@media (max-width: 1300px) {
+  #ThemeColumns {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 0;}}
+
+@media (max-width: 600px) {
+  :root{
+    --h1:1.3rem;
+    --p-main:1rem;
+    --signup:1rem;
+    --foot-p:0.9rem;
+    --foot-h2:1rem;
+    --foot-h1:1.5rem;}
+  html {
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (600 - 320)));}
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;}
+
+  #MenuLogo {
+    font-size: var(--foot-h1);}
+  #Menu {
+    display: grid;
+    justify-content: center;}
+  #MenuLogo {
+    margin-bottom: 0.7rem;}
+  .MenuButton {
+    padding: 0 0.5rem;}
+  .GradientButton.LogInColor {
+    display: none;}
+  hr {
+    background: repeating-linear-gradient(-90deg, var(--main-background-red-color), var(--main-background-blue-color));}
+
+  #p-main{
+  margin: 1.2rem 0;}
+
+  #FirstColumn {
+    position: static;}
+  #Stolb1 {
+    padding-left: 0;}
+  #emailNwebsite,#IconsMob,#Contacts,#FootLogo {
+    text-align: center;}
+  .footerRealBtn {
+    padding: 5px 3px;}
+  #AllRightsReserved {
+    margin-top: 0;
+    position: static;}
+  #Author {
+    margin-top: 0;
+    text-align: left;}
+  #ThemeColumns {
+    width: fit-content;}
+  .FooterColumn,#FootLogo  {
+    margin: 0.7rem 0;
+    padding-left: 0;}
+  #FirstColumn {
+    display: block;}
+  .FooterColumn{
+    padding-left:0.25rem;
+    padding-right:0.25rem;
+  }
+  #contactsNthemesColumn,#MenuButtons,#firsttext,#Contacts {
+    display: inline;}
+  .footerRealBtn,.FooterColumn {
+    display: inline-block;}
+  h1, #p-main, #SignUpCont, #ThemeColumns,#MrBull, #FirstColumn {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;}
+  h1, #p-main, #SignUpCont {
+  width:90%;}
+  #inputSignUp, .GradientButton.SignUpColor {
+    height: calc(var(--signup)*2.5);}}

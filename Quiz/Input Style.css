@@ -1,0 +1,237 @@
+body, html
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Montserrat Alternates";
+  background: transparent;
+  color: #0c214c;
+}
+
+body 
+{
+  background: linear-gradient(-45deg, #f11328, #f8a7ad, #bfd4ff, #0957f2);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient 
+{
+	0% 
+  {
+		background-position: 0% 50%;
+	}
+	50% 
+  {
+		background-position: 100% 50%;
+	}
+	100% 
+  {
+		background-position: 0% 50%;
+	}
+}
+
+.wrapper
+{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.main
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.quiz1-frame
+{
+	border: 0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.quiz1__head,.quiz1__body,.quiz1__footer,#timertime
+{
+  text-align:center;
+  margin:auto;
+}
+
+.quiz1__head
+{
+  font-weight:bold;
+  font-family: 'Montserrat Alternates';
+  font-size: calc(16pt + (32 - 16) * ((100vw - 320px) / (1920 - 320)));
+  width: calc(285px + (1050 - 285) * ((100vw - 320px) / (1920 - 320)));;
+  margin-bottom: calc(30px + (70 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.head__content 
+{
+  white-space: pre-wrap;
+  padding: 5px;
+}
+
+.quiz1__body
+{
+  font-family: 'PT Root UI';
+  width: calc(265px + (780 - 265) * ((100vw - 320px) / (1920 - 320)));
+
+}
+
+.buttons__content 
+{ 
+  white-space: pre-wrap;
+  display: block;
+  position: relative;
+  font-size: calc(14pt + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 1.5; 
+}
+
+.quiz1__footer
+{
+  bottom: 15px;
+  left: 0;
+  font-family: 'Montserrat Alternates Regular';
+  font-size: calc(16pt + (35 - 16) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.quiz1__footer,#timertime
+{
+  position: absolute;
+  line-height: 1.5;
+  display: block;
+  padding:5px;
+  width:100%;
+}
+
+.footer__content 
+{
+	padding: 5px;
+}
+
+#timertime 
+{
+  transition: color 1s cubic-bezier(0.45, 0.05, 0.55, 0.95), opacity 1s ease ;
+  font-family: 'Montserrat Alternates';
+  font-size: calc(20pt + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 700;
+  color: #fff;
+  left: 0;
+  top:15px;
+}
+    
+input,input::-webkit-input-placeholder
+{
+  font-family: 'PT Root UI';
+  height:  calc(16pt + (35 - 16) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(16pt + (35 - 16) * ((100vw - 320px) / (1920 - 320)))
+}
+
+.qv
+{
+  display: block;
+  font-size: calc(16pt + (35 - 16) * ((100vw - 320px) / (1920 - 320)));
+}
+
+input:focus
+{
+  outline: none; 
+  color:#0957f2;
+  border-color:#0957f2;
+  box-shadow:0 0 0.5rem #508aff;
+}
+    
+input
+{
+  width: calc(100px + (150 - 100) * ((100vw - 320px) / (1920 - 320)));
+  border-color:#0c214c;
+  background-color: #f7f7f7;
+  padding:0 1%;
+  text-align: center;
+  border-radius: calc(0.3vw + 3px);
+  transition: all 0.3s ease-in-out;
+}
+
+.red 
+{
+  border-color: red;
+  color: red;
+  box-shadow: 0px 2px 12px 0px  red;
+  background-color: #ffdada;
+}
+
+.green 
+{
+  border-color: lime;
+  color: lime;
+  background-color: #dcffde;
+  box-shadow: 0px 2px 12px 0px lime;
+}
+
+#quiz1bady 
+{
+  width: calc(275px + (800 - 275) * ((100vw - 320px) / (1920 - 320)))
+}
+ 
+.blink2 
+{
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+}
+  
+@-webkit-keyframes pulsate 
+{
+  0% 
+  { 
+    font-size: calc(20pt + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+  }
+  
+  50%
+  {
+    font-size: calc(40pt + (60 - 40) * ((100vw - 320px) / (1920 - 320)));
+  }
+  100% 
+  { 
+      font-size: calc(20pt + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+  
+#btnmain2:hover ,#butt:hover
+{ 
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#btnmain2:focus,#butt:focus
+{
+  outline: none;
+}
+
+#btnmain2, #butt
+{
+  border: 0;
+  background-size: 300% 100%;
+  border-radius: 16px;
+  font-family: 'PT Root UI';
+  background-image: linear-gradient(to right, #a81524, #f11328, #cf1f31, #77101a);
+  box-shadow: 0px 2px 6px 0px  rgba(0, 0, 0, 0.5);
+  transition: all .4s ease-in-out;
+  color: #fff;
+  padding: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320))) 0px;
+  width: calc(170px + (250 - 170) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(16pt + (35 - 16) * ((100vw - 320px) / (1920 - 320)));
+  display: block;
+  font-weight: 700;
+  margin: calc(30px + (70 - 30) * ((100vw - 320px) / (1920 - 320))) auto 2px auto;
+  cursor: pointer;
+}
+
+#butt 
+{
+margin-top: calc(30px + (70 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
